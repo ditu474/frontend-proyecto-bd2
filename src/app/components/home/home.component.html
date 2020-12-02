@@ -7,11 +7,12 @@
 
       <mat-card-content>
         <!-- <form [formGroup]="formGroup" > -->
-        <form  >
-          
+        <form [formGroup]="formGroup">
           <br />
 
-          <p class="leading-relaxed mt-4"> Por favor ingresa tu correo institucional</p>
+          <p class="leading-relaxed mt-4">
+            Por favor ingresa tu correo institucional
+          </p>
           <p>
             <mat-form-field class="field">
               <input
@@ -24,13 +25,12 @@
           </p>
 
           <div class="mt-4">
-            
             <div class="mt-2">
               <label class="inline-flex items-center">
                 <input
                   type="radio"
                   class="form-radio"
-                  name="accountType"
+                  name="tipo"
                   value="estudiante"
                   formControlName="tipo"
                 />
@@ -41,7 +41,7 @@
                 <input
                   type="radio"
                   class="form-radio"
-                  name="accountType"
+                  name="tipo"
                   value="docente"
                   formControlName="tipo"
                 />
@@ -52,28 +52,32 @@
                 <input
                   type="radio"
                   class="form-radio"
-                  name="accountType"
+                  name="tipo"
                   value="empleado"
                   formControlName="tipo"
                 />
                 <span class="ml-2">Empleado</span>
               </label>
-
             </div>
           </div>
 
-          <br>
+          <br />
 
           <!-- <button type="submit" mat-stroked-button color="primary" [disabled]="formGroup.invalid">Ingresar</button> -->
-          <button type="submit" mat-stroked-button color="primary">Ingresar</button>
+          <button type="submit" mat-stroked-button color="primary">
+            Ingresar
+          </button>
         </form>
         <!-- <pre>{{formGroup.value | json}}</pre> -->
       </mat-card-content>
     </div>
 
     <div class="title-font font-medium text-2xl text-gray-900">
-      <img class="banner" src="https://www.politecnicojic.edu.co/images/img/escudo.jpg" alt="Poli JIC"/>
+      <img
+        class="banner"
+        src="https://www.politecnicojic.edu.co/images/img/escudo.jpg"
+        alt="Poli JIC"
+      />
     </div>
-    
   </div>
 </section>

@@ -10,11 +10,6 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  /*
   LoginArray: Array<any> = new Array<Login>();
   productoOne: Login = new Login();
   public formGroup: FormGroup;
@@ -26,22 +21,22 @@ export class HomeComponent implements OnInit {
     console.log(this.formGroup.value);
   }
 
-  private buildForm() {
+  private buildForm(): void {
     this.formGroup = this.formBuilder.group({
-      email: ['', Validators.required, Validators.pattern('^[a-z0-9._%+-]+@elpoli.edu.co')],
+      email: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@elpoli.edu.co')]],
       tipo: ['', Validators.required]
     });
   }
 
-  public sendData() {
+  public sendData(): void {
     this.productoOne = this.formGroup.value as Login;
     this.LoginInyectado.ingresar().subscribe((productoRecibido) => {
       console.log(productoRecibido);
       this.formGroup.reset();
-      //TODO: AQUI IRIA EL INGRESO A LA APP
+      // TODO: AQUI IRIA EL INGRESO A LA APP
     });
   }
 
-  */
+
 
 }

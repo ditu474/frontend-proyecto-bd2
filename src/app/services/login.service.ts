@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
   rutaApi = 'http://localhost:3000/api/user/login';
-  
+
   login: Login = new Login();
   constructor(private http: HttpClient) {}
 
