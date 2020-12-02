@@ -6,7 +6,8 @@
       </h1>
 
       <mat-card-content>
-        <form [formGroup]="loginForm">
+        <!-- <form [formGroup]="formGroup" > -->
+        <form  >
           
           <br />
 
@@ -31,6 +32,7 @@
                   class="form-radio"
                   name="accountType"
                   value="estudiante"
+                  formControlName="tipo"
                 />
                 <span class="ml-2">Estudiante</span>
               </label>
@@ -41,6 +43,7 @@
                   class="form-radio"
                   name="accountType"
                   value="docente"
+                  formControlName="tipo"
                 />
                 <span class="ml-2">Docente</span>
               </label>
@@ -51,6 +54,7 @@
                   class="form-radio"
                   name="accountType"
                   value="empleado"
+                  formControlName="tipo"
                 />
                 <span class="ml-2">Empleado</span>
               </label>
@@ -60,9 +64,10 @@
 
           <br>
 
-          <button type="submit" mat-stroked-button color="primary" [disabled]="loginForm.invalid">Ingresar</button>
+          <!-- <button type="submit" mat-stroked-button color="primary" [disabled]="formGroup.invalid">Ingresar</button> -->
+          <button type="submit" mat-stroked-button color="primary">Ingresar</button>
         </form>
-        <!-- <pre>{{loginForm.value | json}}</pre> -->
+        <!-- <pre>{{formGroup.value | json}}</pre> -->
       </mat-card-content>
     </div>
 
