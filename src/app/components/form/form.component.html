@@ -1,1 +1,146 @@
-<p>form works!</p>
+<div class="container">
+  <div>
+    <mat-card>
+      <mat-card-title>Antecedentes 🧾</mat-card-title>
+      <br />
+      <mat-card-content>
+        <p>Hipertension Arterial?</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Diabetes</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Enfermedades Pulmonares Crónicas</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Enfermedades Renales</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title
+        >¿ Has tenido sintomas en los ultimos dos días? 🤒</mat-card-title
+      >
+      <br />
+      <mat-card-content>
+        <p>Tos</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Dolor de garganta</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Fiebre mayor a 38°C</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Secreción nasal</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title>Identificación de Contacto 👨‍👨‍👧‍👦</mat-card-title>
+      <br />
+      <mat-card-content>
+        <p>
+          En los últimos días ha tenido contacto estrecho con una persona con
+          COVID-19 Positivo?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          En los últimos días ha tenido contacto estrecho con una persona con
+          problemas respiratorios y no sabes si tiene COVID-19 Positivo?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title>Sector trabajo 💻</mat-card-title>
+      <br />
+      <mat-card-content>
+        <p>En que sector trabajas?</p>
+        <mat-form-field appearance="fill">
+          <mat-label>Seleccione...</mat-label>
+            <select matNativeControl required>
+                <option value="Salud">Salud</option>
+                <option value="Telecomunicaciones">Telecomunicaciones</option>
+                <option value="Deportes">Deportes</option>
+              </select>
+        </mat-form-field>
+
+        <p>
+          Selecciona un area donde hayas trabajo durante la pandemia (con mayor
+          frecuencia)
+        </p>
+        <mat-form-field appearance="fill">
+          <mat-label>Seleccione...</mat-label>
+          <select matNativeControl required>
+            <option value="Salud">Salud</option>
+            <option value="Telecomunicaciones">Telecomunicaciones</option>
+            <option value="Deportes">Deportes</option>
+          </select>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+        <mat-card-title>Pruebas diagnosticas 👀</mat-card-title>
+        <br />
+        <mat-card-content>
+            <p>
+              En los últimos días le han realizado la prueba de
+              COVID-19 con muestra de nariz o garganta?
+            </p>
+            <mat-radio-group>
+              <mat-radio-button value="Si">Si</mat-radio-button>
+              <mat-radio-button value="No">No</mat-radio-button>
+            </mat-radio-group>
+    
+            <p>
+                En los últimos días le han realizado la prueba de
+                COVID-19 en sangre?
+              </p>
+            <mat-radio-group>
+              <mat-radio-button value="Si">Si</mat-radio-button>
+              <mat-radio-button value="No">No</mat-radio-button>
+            </mat-radio-group>
+          </mat-card-content>
+      </mat-card>
+      <div class="button">
+      <button type="submit" mat-stroked-button color="primary">Enviar</button>
+    </div>
+  </div>
+</div>

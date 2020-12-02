@@ -1,1 +1,79 @@
-<p>home works!</p>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+    <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+      <h1 class="title-font font-medium text-3xl text-gray-900">
+        😊 BIENVENID@ 😊
+      </h1>
+
+      <mat-card-content>
+        <!-- <form [formGroup]="formGroup" > -->
+        <form  >
+          
+          <br />
+
+          <p class="leading-relaxed mt-4"> Por favor ingresa tu correo institucional</p>
+          <p>
+            <mat-form-field class="field">
+              <input
+                type="text"
+                matInput
+                placeholder="Email"
+                formControlName="email"
+              />
+            </mat-form-field>
+          </p>
+
+          <div class="mt-4">
+            
+            <div class="mt-2">
+              <label class="inline-flex items-center">
+                <input
+                  type="radio"
+                  class="form-radio"
+                  name="accountType"
+                  value="estudiante"
+                  formControlName="tipo"
+                />
+                <span class="ml-2">Estudiante</span>
+              </label>
+
+              <label class="inline-flex items-center ml-6">
+                <input
+                  type="radio"
+                  class="form-radio"
+                  name="accountType"
+                  value="docente"
+                  formControlName="tipo"
+                />
+                <span class="ml-2">Docente</span>
+              </label>
+
+              <label class="inline-flex items-center ml-6">
+                <input
+                  type="radio"
+                  class="form-radio"
+                  name="accountType"
+                  value="empleado"
+                  formControlName="tipo"
+                />
+                <span class="ml-2">Empleado</span>
+              </label>
+
+            </div>
+          </div>
+
+          <br>
+
+          <!-- <button type="submit" mat-stroked-button color="primary" [disabled]="formGroup.invalid">Ingresar</button> -->
+          <button type="submit" mat-stroked-button color="primary">Ingresar</button>
+        </form>
+        <!-- <pre>{{formGroup.value | json}}</pre> -->
+      </mat-card-content>
+    </div>
+
+    <div class="title-font font-medium text-2xl text-gray-900">
+      <img class="banner" src="https://www.politecnicojic.edu.co/images/img/escudo.jpg" alt="Poli JIC"/>
+    </div>
+    
+  </div>
+</section>
