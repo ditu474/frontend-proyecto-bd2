@@ -1,10 +1,16 @@
 <div class="container">
   <div>
     <mat-card>
-      <mat-card-title>Antecedentes 🧾</mat-card-title>
+      <mat-card-title
+        >Antecedentes. ¿Ha tenido alguno de los siguientes antecedentes?
+        🧾</mat-card-title
+      >
       <br />
       <mat-card-content>
-        <p>Hipertension Arterial?</p>
+        <p>
+          Hipertensión arterial, o enfermedad cardio vascular, infartos,
+          enfermedad cerebrovascular
+        </p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
           <mat-radio-button value="No">No</mat-radio-button>
@@ -16,13 +22,58 @@
           <mat-radio-button value="No">No</mat-radio-button>
         </mat-radio-group>
 
-        <p>Enfermedades Pulmonares Crónicas</p>
+        <p>Enfermedades pulmonares crónicas (EPOC / Asma)</p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
           <mat-radio-button value="No">No</mat-radio-button>
         </mat-radio-group>
 
-        <p>Enfermedades Renales</p>
+        <p>Enfermedades renales (riñones) o hepáticas (hígado)</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          Enfermedades autoinmunes, inmunosupresión, toma medicamentos
+          inmunosupresores, cancer o VIH
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Malnutrición (obesidad o desnutrición)</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Tabaquismo</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Embarazo Actualmente</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          Convive con personas mayores de 70 años o personas que trabajan en
+          prestación asistencial en salud
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          Si lleva tratamiento médico por los antecedentes de salud, marque Si,
+          de lo contrario marque No
+        </p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
           <mat-radio-button value="No">No</mat-radio-button>
@@ -32,7 +83,7 @@
 
     <mat-card>
       <mat-card-title
-        >¿ Has tenido sintomas en los ultimos dos días? 🤒</mat-card-title
+        >¿Ha tenido síntomas en los últimos 2 días? 🤒</mat-card-title
       >
       <br />
       <mat-card-content>
@@ -48,13 +99,37 @@
           <mat-radio-button value="No">No</mat-radio-button>
         </mat-radio-group>
 
-        <p>Fiebre mayor a 38°C</p>
+        <p>Fiebre cuantificada mayor a 38°C</p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
           <mat-radio-button value="No">No</mat-radio-button>
         </mat-radio-group>
 
-        <p>Secreción nasal</p>
+        <p>Secreción nasal (moco o flema)</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Malestar general, escalofrio o dolor muscular</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Disminución de percepción de olores y sabores</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Dificultad respiratoria</p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>Diarrea</p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
           <mat-radio-button value="No">No</mat-radio-button>
@@ -67,8 +142,8 @@
       <br />
       <mat-card-content>
         <p>
-          En los últimos días ha tenido contacto estrecho con una persona con
-          COVID-19 Positivo?
+          ¿En los últimos 15 días ha tenido contacto estrecho (menor a 2 metros
+          por 15 minutos sin protección) con una persona con COVID-19 positivo?
         </p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
@@ -76,8 +151,9 @@
         </mat-radio-group>
 
         <p>
-          En los últimos días ha tenido contacto estrecho con una persona con
-          problemas respiratorios y no sabes si tiene COVID-19 Positivo?
+          ¿En los últimos 15 días ha tenido contacto estrecho (menor a 2 metros
+          por 15 minutos sin protección) con una persona con síntomas
+          respiratorios y ud no sabe si tiene COVID-19 positivo?
         </p>
         <mat-radio-group>
           <mat-radio-button value="Si">Si</mat-radio-button>
@@ -90,56 +166,136 @@
       <mat-card-title>Sector trabajo 💻</mat-card-title>
       <br />
       <mat-card-content>
-        <p>En que sector trabajas?</p>
+        <p>¿En qué sector trabaja usted?</p>
         <mat-form-field appearance="fill">
           <mat-label>Seleccione...</mat-label>
-            <select matNativeControl required>
-                <option value="Salud">Salud</option>
-                <option value="Telecomunicaciones">Telecomunicaciones</option>
-                <option value="Deportes">Deportes</option>
-              </select>
+          <select matNativeControl required>
+            <option value="Personal asistencial en Salud que atiende pacientes">
+              Personal asistencial en Salud que atiende pacientes
+            </option>
+            <option
+              value="Personal asistencial en Salud que No atiende pacientes"
+            >
+              Personal asistencial en Salud que No atiende pacientes
+            </option>
+            <option value="Personal de Aseo en institución de salud">
+              Personal de Aseo en institución de salud
+            </option>
+            <option value="Personal de Vigilancia en institución de salud">
+              Personal de Vigilancia en institución de salud
+            </option>
+            <option value="Administrativo en institución de salud">
+              Administrativo en institución de salud
+            </option>
+            <option value="Atencón al público">Atencón al público</option>
+            <option value="Educación">Educación</option>
+            <option value="Comercio">Comercio</option>
+            <option value="Manufactura">Manufactura</option>
+            <option value="Telecomunicaciones">Telecomunicaciones</option>
+            <option value="Servicio">Servicio</option>
+            <option value="Construcción">Construcción</option>
+            <option value="Hidrocarburos">Hidrocarburos</option>
+            <option value="Otro">Otro</option>
+          </select>
         </mat-form-field>
 
         <p>
-          Selecciona un area donde hayas trabajo durante la pandemia (con mayor
-          frecuencia)
+          Indique si durante la pandemia Covid19, usted ha estado trabajando en
+          alguna de estas áreas: (En caso de haber trabajado en más de una de
+          estas áreas, marque la de mayor frecuencia)
         </p>
         <mat-form-field appearance="fill">
           <mat-label>Seleccione...</mat-label>
           <select matNativeControl required>
-            <option value="Salud">Salud</option>
-            <option value="Telecomunicaciones">Telecomunicaciones</option>
-            <option value="Deportes">Deportes</option>
+            <option value="Área de salud en urgencias">
+              Área de salud en urgencias
+            </option>
+            <option
+              value="Área de salud en hospitalización de pabellones Covid"
+            >
+              Área de salud en hospitalización de pabellones Covid
+            </option>
+            <option
+              value="Área de salud en Unidades de cuidado intensivo adulto/pediátrica y/o neonatal"
+            >
+              Área de salud en Unidades de cuidado intensivo adulto/pediátrica
+              y/o neonatal
+            </option>
+            <option
+              value="Área de salud en unidades de cuidado intermedio adulto y/o pediátrica"
+            >
+              Área de salud en unidades de cuidado intermedio adulto y/o
+              pediátrica
+            </option>
+            <option value="Ninguna de las anteriores">
+              Ninguna de las anteriores
+            </option>
+          </select>
+        </mat-form-field>
+
+        <p>
+          En caso de que la pregunta anterior no le aplique, por favor indique
+          en qué tipo de área ha estado trabajando:
+        </p>
+        <mat-form-field appearance="fill">
+          <mat-label>Seleccione...</mat-label>
+          <select matNativeControl required>
+            <option value="No aplica">No aplica</option>
+            <option value="Otra área de la salud">Otra área de la salud</option>
+            <option value="Área administrativa que no es de salud">
+              Área administrativa que no es de salud
+            </option>
+            <option value="Área operativa que no es de salud">
+              Área operativa que no es de salud
+            </option>
           </select>
         </mat-form-field>
       </mat-card-content>
     </mat-card>
 
-
     <mat-card>
-        <mat-card-title>Pruebas diagnosticas 👀</mat-card-title>
-        <br />
-        <mat-card-content>
-            <p>
-              En los últimos días le han realizado la prueba de
-              COVID-19 con muestra de nariz o garganta?
-            </p>
-            <mat-radio-group>
-              <mat-radio-button value="Si">Si</mat-radio-button>
-              <mat-radio-button value="No">No</mat-radio-button>
-            </mat-radio-group>
-    
-            <p>
-                En los últimos días le han realizado la prueba de
-                COVID-19 en sangre?
-              </p>
-            <mat-radio-group>
-              <mat-radio-button value="Si">Si</mat-radio-button>
-              <mat-radio-button value="No">No</mat-radio-button>
-            </mat-radio-group>
-          </mat-card-content>
-      </mat-card>
-      <div class="button">
+      <mat-card-title>Pruebas diagnósticas 👀</mat-card-title>
+      <br />
+      <mat-card-content>
+        <p>
+          ¿En los últimos 15 días le han realizado prueba de COVID-19 con
+          muestra en nariz o garganta (RT-PCR o antígeno) que ha salido
+          positiva?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          ¿En los últimos 15 días le han realizado prueba de COVID-19 en sangre
+          (Prueba rápida IgG/IgM) que ha salido positiva?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          ¿En los últimos 15 días ha estado o está en aislamiento preventivo por
+          que ha sido diagnosticado de COVID-19?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+
+        <p>
+          ¿En los últimos 15 días ha tenido incapacidad temporal por caso
+          asociado a COVID-19?
+        </p>
+        <mat-radio-group>
+          <mat-radio-button value="Si">Si</mat-radio-button>
+          <mat-radio-button value="No">No</mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+    </mat-card>
+    <div class="button">
       <button type="submit" mat-stroked-button color="primary">Enviar</button>
     </div>
   </div>
