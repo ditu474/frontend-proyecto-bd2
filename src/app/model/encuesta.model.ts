@@ -20,6 +20,6 @@ export class Encuesta {
     contacto_sintomatico: boolean;
     sector: String;
     area_durante_covid: String;
-    prueba_con_muestra; boolean;
+    prueba_con_muestra: boolean;
     prueba_sangre: boolean;
   }

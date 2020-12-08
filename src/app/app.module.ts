@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
@@ -48,7 +49,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     ReactiveFormsModule,
     MatCardModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
