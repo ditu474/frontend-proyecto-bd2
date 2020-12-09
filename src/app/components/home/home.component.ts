@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   private buildForm(): void {
     this.formGroup = this.formBuilder.group({
       email: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@elpoli.edu.co')]],
-      tipo: ['estudiante', Validators.required]
+      tipo: ['', Validators.required]
     });
   }
 
