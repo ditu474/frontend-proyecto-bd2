@@ -17,6 +17,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
@@ -56,7 +58,9 @@ import { BooleanRadioGroupComponent } from './components/form/boolean-radio-grou
     MatRadioModule,
     MatSelectModule,
     MatSnackBarModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -14,8 +14,17 @@ export class FormComponent implements OnInit {
   contactoFormGroup: FormGroup;
   sectorFormGroup: FormGroup;
   pruebasFormGroup: FormGroup;
+  fechaFormControl: FormControl;
+  minDate: Date;
+  maxDate: Date;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    const currentDay = new Date().getDate();
+    this.minDate = new Date(currentYear, currentMonth, currentDay + 1);
+    this.maxDate = new Date(currentYear, currentMonth + 1, currentDay);
+   }
 
   ngOnInit(): void {
     this.buildForms();
@@ -64,10 +73,13 @@ export class FormComponent implements OnInit {
       aislamiento	: [null, Validators.required],
       incapacidad	: [null, Validators.required]
     });
+
+    this.fechaFormControl = new FormControl('', [Validators.required]);
   }
 
-  public test(formGroup: FormGroup): void {
-    console.log(formGroup.value);
+  public sendForm(): void {
+    console.log(this.antecedentesFormGroup.value, this.sintomasFormGroup.value, this.contactoFormGroup.value,
+      this.sectorFormGroup.value, this.pruebasFormGroup.value, this.fechaFormControl.value);
   }
 
 }
