@@ -25,6 +25,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormComponent } from './components/form/form.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { CardComponent } from './components/form/card/card.component';
+import { BooleanRadioGroupComponent } from './components/form/boolean-radio-group/boolean-radio-group.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     HomeComponent,
     FormComponent,
     NavigationComponent,
+    CardComponent,
+    BooleanRadioGroupComponent,
   ],
   imports: [
     BrowserModule,

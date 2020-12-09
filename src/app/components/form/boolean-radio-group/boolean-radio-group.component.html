@@ -1,0 +1,7 @@
+<h4>{{ label }}</h4>
+<ng-container [formGroup]="controlContainer.control">
+  <mat-radio-group [formControlName]="controlName">
+    <mat-radio-button [value]="true">Si</mat-radio-button>
+    <mat-radio-button [value]="false">No</mat-radio-button>
+  </mat-radio-group>
+</ng-container>
