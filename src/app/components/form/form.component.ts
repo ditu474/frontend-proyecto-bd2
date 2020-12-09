@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { Docente, Empleado, Estudiante } from '../../model';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-form',
@@ -15,10 +17,11 @@ export class FormComponent implements OnInit {
   sectorFormGroup: FormGroup;
   pruebasFormGroup: FormGroup;
   fechaFormControl: FormControl;
+  personalInfo: Docente | Empleado | Estudiante;
   minDate: Date;
   maxDate: Date;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private authService: AuthService) {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
     const currentDay = new Date().getDate();
@@ -28,6 +31,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
     this.buildForms();
+    this.personalInfo = Object.assign({}, this.authService.getPersonalInfo());
   }
 
 

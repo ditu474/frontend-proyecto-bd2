@@ -1,9 +1,9 @@
 export class Docente {
-  constructor(public nro_documento: number,
-              public tipo_doc: string,
-              public nombre_completo: string,
-              public email: string,
-              public tipo: string,
-              public programa: string,
-              public facultad: string) {}
+  constructor(public Documento: number,
+              public TipoDeDocumento: string,
+              public Nombre: string,
+              public Email: string,
+              public Tipo: string,
+              public Programa: string,
+              public Facultad: string) {}
 }

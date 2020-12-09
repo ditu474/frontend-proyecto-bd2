@@ -15,3 +15,7 @@ button {
   padding: 0 0.5rem;
   font-weight: bold;
 }
+
+.personal-info {
+  display: block;
+}

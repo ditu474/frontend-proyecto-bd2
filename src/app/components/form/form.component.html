@@ -2,6 +2,15 @@
   <mat-vertical-stepper [linear]="true" #stepper>
     <mat-step>
       <ng-template matStepLabel>Información Personal</ng-template>
+      <app-card title="Información Personal ✎">
+        <mat-form-field
+          class="example-full-width personal-info"
+          *ngFor="let item of personalInfo | keyvalue"
+        >
+          <mat-label>{{ item.key }}</mat-label>
+          <input matInput [value]="item.value" disabled />
+        </mat-form-field>
+      </app-card>
       <button mat-button matStepperNext>Siguiente</button>
     </mat-step>
 

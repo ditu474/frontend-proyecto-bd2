@@ -14,6 +14,10 @@ export class AuthService {
     this.personalInfo = data;
   }
 
+  public getPersonalInfo(): Empleado | Estudiante | Docente {
+    return this.personalInfo;
+  }
+
   public isAuthenticated(): boolean{
     return this.personalInfo != null;
   }

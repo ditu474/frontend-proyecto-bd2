@@ -1,8 +1,8 @@
 export class Empleado {
-  constructor(public nro_doc: number,
-              public nombre: string,
-              public area_facultad: number,
-              public cargo: string,
-              public email: string,
-              public facultad: string){}
+  constructor(public Documento: number,
+              public Nombre: string,
+              public Area: number,
+              public Cargo: string,
+              public Email: string,
+              public Facultad: string){}
 }
